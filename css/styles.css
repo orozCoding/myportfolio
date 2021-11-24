@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 /* Body general style */
@@ -26,6 +26,7 @@ body {
   font-weight: bold;
   color: #6070FF;
   margin-left: 24px;
+  line-height: 20px;
 }
 
 .navbar .menu {
@@ -35,9 +36,50 @@ body {
 /* Headline */
 
 .headline {
-  background-image: url("/img/background/headlinebg.png");
+  background-image: url("/img/background/headlinebgmobile.png");
   background-size: 100%;
   display: flex;
-  align-items: stretch;
-  
+}
+
+.headline-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 75px;
+}
+
+#headline-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172B4D;
+  margin-bottom: 12px;
+}
+
+#headline-info {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+#headline-action {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7F8CFF;
+  margin-bottom: 12px;
+}
+
+.headline-icons {
+  display:flex;
+  flex-direction: row;
+  gap: 25px;
 }
