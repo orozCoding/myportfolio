@@ -8,7 +8,7 @@ body {
 
 ul {
   list-style: none;
-  padding: 0px;
+  padding: 0mm;
 }
 
 /* Header */
@@ -52,7 +52,8 @@ ul {
   margin-top: 100px;
 }
 
-#headline-title, #headline-subtitle {
+#headline-title,
+#headline-subtitle {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -76,7 +77,7 @@ ul {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 0px;
+  margin-bottom: 0mm;
 }
 
 #headline-action {
@@ -86,7 +87,7 @@ ul {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  margin-bottom: 0px;
+  margin-bottom: 0mm;
 }
 
 .headline-icons {
