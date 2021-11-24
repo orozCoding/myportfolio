@@ -7,6 +7,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+ul {
+  list-style: none;
+  padding:0px;
+}
+
 /* Header */
 
 /* Navigation Bar */
@@ -59,7 +64,7 @@ body {
   color: #172b4d;
 }
 
-#headline-title {
+#headline-title, #headline-subtitle {
   margin-bottom: -30px;
 }
 
@@ -86,6 +91,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 25px;
+  justify-content: start;
 }
 
 /* Adding cursor pointer */
