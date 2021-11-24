@@ -11,7 +11,7 @@ body {
 
 /* Navigation Bar */
 
-.navbar {
+.head-bar {
   display: flex;
   background-color: white;
   margin-bottom: 12px;
@@ -21,7 +21,7 @@ body {
   justify-content: space-between;
 }
 
-.navbar .logo {
+.head-bar .logo {
   font-weight: bold;
   color: #6070ff;
   margin-left: 24px;
@@ -49,14 +49,17 @@ body {
   margin-top: 100px;
 }
 
-#headline-title {
+#headline-title, #headline-subtitle {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-  margin-bottom: 12px;
+}
+
+#headline-title {
+  margin-bottom: -30px;
 }
 
 #headline-info {
