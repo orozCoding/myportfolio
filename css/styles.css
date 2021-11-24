@@ -28,9 +28,10 @@ body {
   line-height: 20px;
 }
 
-.navbar .menu {
+.head-bar .menu {
   margin-right: 24px;
   border: none;
+  background-color: white;
 }
 
 /* Headline */
