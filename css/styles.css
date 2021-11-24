@@ -62,7 +62,12 @@ ul {
 }
 
 #headline-title {
+  margin-top: -10px;
   margin-bottom: -30px;
+}
+
+#headline-subtitle {
+  margin-bottom: 5px;
 }
 
 #headline-info {
@@ -71,7 +76,7 @@ ul {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 12px;
+  margin-bottom: 0px;
 }
 
 #headline-action {
@@ -81,7 +86,7 @@ ul {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  margin-bottom: 12px;
+  margin-bottom: 0px;
 }
 
 .headline-icons {
