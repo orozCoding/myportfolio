@@ -8,7 +8,7 @@ body {
 
 ul {
   list-style: none;
-  padding: 0mm;
+  padding: 0;
 }
 
 /* Header */
@@ -77,7 +77,7 @@ ul {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 0mm;
+  margin-bottom: 0;
 }
 
 #headline-action {
@@ -87,7 +87,7 @@ ul {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  margin-bottom: 0mm;
+  margin-bottom: 0;
 }
 
 .headline-icons {
