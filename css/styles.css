@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 /* Body general style */
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Header */
 
-/* Navigation Bar*/
+/* Navigation Bar */
 
 .navbar {
   display: flex;
@@ -24,7 +23,7 @@ body {
 
 .navbar .logo {
   font-weight: bold;
-  color: #6070FF;
+  color: #6070ff;
   margin-left: 24px;
   line-height: 20px;
 }
@@ -51,17 +50,17 @@ body {
 }
 
 #headline-title {
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D;
+  color: #172B4d;
   margin-bottom: 12px;
 }
 
 #headline-info {
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -70,15 +69,14 @@ body {
 }
 
 #headline-action {
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7F8Cff;
   margin-bottom: 12px;
 }
-
 
 .headline-icons {
   display:flex;
