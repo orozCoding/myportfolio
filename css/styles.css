@@ -55,7 +55,7 @@ body {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  color: #172B4d;
+  color: #172b4d;
   margin-bottom: 12px;
 }
 
@@ -74,12 +74,12 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8Cff;
+  color: #7f8cff;
   margin-bottom: 12px;
 }
 
 .headline-icons {
-  display:flex;
+  display: flex;
   flex-direction: row;
   gap: 25px;
 }
@@ -89,5 +89,5 @@ body {
 .headline-icons img:hover,
 #headline-action:hover,
 #menu-button:hover {
-  cursor:pointer;
+  cursor: pointer;
 }
