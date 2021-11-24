@@ -2,14 +2,13 @@
 
 /* Body general style */
 body {
-  display: flex;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
 }
 
 ul {
   list-style: none;
-  padding:0px;
+  padding: 0px;
 }
 
 /* Header */
@@ -17,7 +16,6 @@ ul {
 /* Navigation Bar */
 
 .head-bar {
-  display: flex;
   background-color: white;
   margin-bottom: 12px;
   margin-top: 5px;
@@ -48,7 +46,6 @@ ul {
 }
 
 .headline-content {
-  display: flex;
   flex-direction: column;
   margin-left: 24px;
   margin-right: 24px;
@@ -88,7 +85,6 @@ ul {
 }
 
 .headline-icons {
-  display: flex;
   flex-direction: row;
   gap: 25px;
   justify-content: start;
@@ -100,4 +96,8 @@ ul {
 #headline-action:hover,
 #menu-button:hover {
   cursor: pointer;
+}
+
+.d-flex {
+  display: flex;
 }
