@@ -100,21 +100,34 @@ ul {
 
 .my-works{
   background: #e5e5e5;
-  grid-template-rows: auto auto auto;
-  grid-gap
+  grid-template-rows: auto auto auto auto;
+  row-gap: 100px;
 }
 
 #work-1{
-  grid-row: 1 / 3;
+  grid-row: 1 / 2;
 }
 
-#work-1,
-#work-2,
+#work-2{
+  grid-row: 2 / 3;
+}
+
 #work-3{
-  flex-direction: column;
+  grid-row: 3 / 4;
+}
+
+#work-4{
+  grid-row: 4 / 5;
 }
 
 
+
+/* Cards styling */
+
+.work-card{
+  flex-direction: column;
+
+}
 
 /* Adding cursor pointer */
 
