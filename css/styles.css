@@ -105,7 +105,6 @@ ul {
   row-gap: 60px;
   padding-top: 75px;
   padding-bottom: 64px;
-  
 }
 
 #work-1 {
@@ -194,7 +193,7 @@ img {
   margin-bottom: 20px;
 }
 
-.work-tags button {
+.tag-button {
   padding: 4px 12px;
   color: #6070ff;
   background: #ebebff;
