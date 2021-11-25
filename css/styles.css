@@ -98,36 +98,88 @@ ul {
 
 /* My Works Section */
 
-.my-works{
-  background: #e5e5e5;
+.my-works {
+  background-color: #fafafa;
   grid-template-rows: auto auto auto auto;
   row-gap: 100px;
 }
 
-#work-1{
+#work-1{ 
   grid-row: 1 / 2;
 }
 
-#work-2{
+#work-2 {
   grid-row: 2 / 3;
 }
 
-#work-3{
+#work-3 {
   grid-row: 3 / 4;
 }
 
-#work-4{
+#work-4 {
   grid-row: 4 / 5;
 }
 
-
+p {
+  margin: 0;
+  display: inline;
+}
 
 /* Cards styling */
 
-.work-card{
+.work-card {
   flex-direction: column;
-
+  background: white;
+  padding: 16px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  margin: 10px 24px 10px 24px;
 }
+
+img {
+  flex: 1 1 100%;
+  max-width: 295px;
+}
+
+.work-title {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  color: #172b4d;
+  line-height: 44px;
+  margin-top: 24px;
+  margin-bottom: 15px;
+}
+
+.work-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.client {
+  color: #344563;
+  font-weight: bold;
+}
+
+.job,
+.year {
+  font-size: 13px;
+  color: #7a869a;
+}
+.counter{
+  background: #c1c7d0;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+}
+
+
+
+
 
 /* Adding cursor pointer */
 
