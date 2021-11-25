@@ -12,15 +12,6 @@ ul {
   padding: 0;
 }
 
-/* Adding cursor pointer */
-
-.headline-icons img:hover,
-#headline-action:hover,
-#menu-button:hover,
-button {
-  cursor: pointer;
-}
-
 /* Header */
 
 /* Navigation Bar */
@@ -327,6 +318,12 @@ img {
   border-top: 1px solid lightgray;
 }
 
+/* Adding cursor pointer */
+
+button,
+.clickeable {
+  cursor: pointer;
+}
 
 /* Displays */
 
