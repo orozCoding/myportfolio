@@ -40,7 +40,7 @@ ul {
 /* Headline */
 
 .headline {
-  background-image: url("/img/background/headlinebgmobile.png");
+  background-image: url("../img/background/headlinebgmobile.png");
   background-size: 100%;
   display: flex;
 }
