@@ -104,6 +104,12 @@ ul {
   cursor: pointer;
 }
 
+/* Displays */
+
 .d-flex {
   display: flex;
+}
+
+.d-grid {
+  display: grid;
 }
