@@ -12,6 +12,15 @@ ul {
   padding: 0;
 }
 
+/* Adding cursor pointer */
+
+.headline-icons img:hover,
+#headline-action:hover,
+#menu-button:hover,
+button {
+  cursor: pointer;
+}
+
 /* Header */
 
 /* Navigation Bar */
@@ -103,8 +112,9 @@ ul {
   background-color: #fafafa;
   grid-template-rows: auto auto auto auto;
   row-gap: 60px;
-  padding-top: 24px;
+  padding-top: 75px;
   padding-bottom: 64px;
+  
 }
 
 #work-1 {
@@ -317,14 +327,6 @@ img {
   border-top: 1px solid lightgray;
 }
 
-/* Adding cursor pointer */
-
-.headline-icons img:hover,
-#headline-action:hover,
-#menu-button:hover,
-button {
-  cursor: pointer;
-}
 
 /* Displays */
 
