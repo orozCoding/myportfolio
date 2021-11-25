@@ -4,6 +4,7 @@
 body {
   flex-direction: column;
   font-family: "Poppins", sans-serif;
+  min-width: 360px;
 }
 
 ul {
@@ -216,11 +217,12 @@ img {
 .about-myself{
   margin-top: 24px;
   margin-bottom: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+
 }
 .about-content {
   flex-direction: column;
-  margin-left: 24px;
-  margin-right: 24px;
 
 }
 
@@ -271,7 +273,52 @@ img {
   color: #396df2;
 }
 
+.experience {
+  flex-grow: 1;
+}
 
+.experience-list {
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#languages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.language {
+  display: flex;
+  background-color: #f7f7f9;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.language p {
+  flex-grow: 3;
+  margin-left: 20px;
+}
+
+.language img {
+  max-width: 50px;
+}
+
+.experience h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 10px 0 10px 0;
+}
+
+.experience hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid lightgray;
+
+}
 
 /* Adding cursor pointer */
 
