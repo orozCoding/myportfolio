@@ -210,6 +210,69 @@ img {
   color: #396df2;
 }
 
+/* About Myself Section */
+
+
+.about-myself{
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.about-content {
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 24px;
+
+}
+
+#about-title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin-bottom: 14px;
+}
+
+
+#about-info {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 14px;
+}
+
+#about-action {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin-bottom: 14px;
+}
+
+.about-icons {
+  flex-direction: row;
+  gap: 25px;
+  justify-content: start;
+}
+
+.about-button {
+  padding: 4px 15px;
+  height: 50px;
+  max-width: 150px;
+  font-size: 17px;
+  background: white;;
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  color: #396df2;
+}
+
+
+
 /* Adding cursor pointer */
 
 .headline-icons img:hover,
