@@ -101,7 +101,9 @@ ul {
 .my-works {
   background-color: #fafafa;
   grid-template-rows: auto auto auto auto;
-  row-gap: 100px;
+  row-gap: 60px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 #work-1{ 
@@ -125,7 +127,7 @@ p {
   display: inline;
 }
 
-/* Cards styling */
+/* Works Cards */
 
 .work-card {
   flex-direction: column;
@@ -133,12 +135,13 @@ p {
   padding: 16px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  margin: 10px 24px 10px 24px;
+  margin: 0 24px 0 24px;
 }
 
 img {
   flex: 1 1 100%;
   max-width: 295px;
+  align-self: center;
 }
 
 .work-title {
@@ -170,16 +173,42 @@ img {
   font-size: 13px;
   color: #7a869a;
 }
-.counter{
+.counter {
   background: #c1c7d0;
   width: 8px;
   height: 8px;
   border-radius: 100%;
 }
 
+.work-description {
+  color: #344563;
+}
 
+.work-tags {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
 
+.work-tags button {
+  padding: 4px 12px;
+  color: #6070ff;
+  background: #ebebff;
+  border-radius: 8px;
+  border: none;
+}
 
+.work-button {
+  padding: 4px 15px;
+  height: 90px;
+  max-width: 120px;
+  font-size: 17px;
+  background: white;;
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  color: #396df2;
+}
 
 /* Adding cursor pointer */
 
