@@ -321,7 +321,8 @@ img {
 
 .headline-icons img:hover,
 #headline-action:hover,
-#menu-button:hover {
+#menu-button:hover,
+button {
   cursor: pointer;
 }
 
