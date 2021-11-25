@@ -107,7 +107,7 @@ ul {
   padding-bottom: 64px;
 }
 
-#work-1{ 
+#work-1 {
   grid-row: 1 / 2;
 }
 
@@ -174,6 +174,7 @@ img {
   font-size: 13px;
   color: #7a869a;
 }
+
 .counter {
   background: #c1c7d0;
   width: 8px;
@@ -205,7 +206,7 @@ img {
   height: 90px;
   max-width: 120px;
   font-size: 17px;
-  background: white;;
+  background: white;
   border: 1px solid #396df2;
   border-radius: 8px;
   color: #396df2;
@@ -213,17 +214,15 @@ img {
 
 /* About Myself Section */
 
-
 .about-myself{
   margin-top: 24px;
   margin-bottom: 24px;
   margin-left: 24px;
   margin-right: 24px;
-
 }
+
 .about-content {
   flex-direction: column;
-
 }
 
 #about-title {
@@ -235,7 +234,6 @@ img {
   color: #172b4d;
   margin-bottom: 14px;
 }
-
 
 #about-info {
   font-family: "Poppins", sans-serif;
@@ -267,7 +265,7 @@ img {
   height: 50px;
   max-width: 150px;
   font-size: 17px;
-  background: white;;
+  background: white;
   border: 1px solid #396df2;
   border-radius: 8px;
   color: #396df2;
@@ -317,7 +315,6 @@ img {
   height: 1px;
   border: 0;
   border-top: 1px solid lightgray;
-
 }
 
 /* Adding cursor pointer */
