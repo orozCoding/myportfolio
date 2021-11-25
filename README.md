@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello World
+# Orozcoding's Portfolio
 
-> My portfolio.
+> Personal Portfolio Webpage showing my (future) projects.
 
 
 ## Built With
