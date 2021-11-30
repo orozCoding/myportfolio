@@ -348,7 +348,6 @@ footer {
 .section-form {
   margin: 0 24px 0 24px;
   padding: 55px 0 55px 0;
-
 }
 
 .contact-info {
@@ -369,15 +368,15 @@ footer {
   font-family: Poppins, sans-serif;
 }
 
-.section-form button {
-    padding: 4px 15px;
-    height: 50px;
-    max-width: 150px;
-    font-size: 17px;
-    background: white;
-    border: 1px solid #396df2;
-    border-radius: 8px;
-    color: #396df2;
+.section-form .button {
+  padding: 4px 15px;
+  height: 50px;
+  max-width: 150px;
+  font-size: 17px;
+  background: white;
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  color: #396df2;
 }
 
 /* Adding cursor pointer */
