@@ -326,7 +326,7 @@ img {
 
 footer {
   background: #6070ff;
-  background-image: url(/img/background/footerbg.png);
+  background-image: url(../img/background/footerbg.png);
   background-size: 60%;
   background-repeat: no-repeat;
   background-position-x: right;
