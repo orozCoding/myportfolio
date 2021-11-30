@@ -7,6 +7,11 @@ body {
   min-width: 360px;
 }
 
+/* Temporal Mobile limitation */
+body {
+  max-width: 500px;
+}
+
 ul {
   list-style: none;
   padding: 0;
