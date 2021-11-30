@@ -317,6 +317,69 @@ img {
   border-top: 1px solid lightgray;
 }
 
+/* Contact Form */
+
+footer {
+  background: #6070ff;
+  background-image: url(/img/background/footerbg.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  border-top-left-radius: 100px;
+}
+
+.section-form,
+.section-form div,
+.section-form form {
+  flex-direction: column;
+  text-align: center;
+}
+
+.section-form h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.section-form h2,
+.section-form p {
+  color: white;
+}
+
+.section-form {
+  margin: 0 24px 0 24px;
+  padding: 55px 0 55px 0;
+
+}
+
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.section-form form {
+  gap: 18px;
+}
+
+.section-form form input,
+.section-form form textarea {
+  padding: 15px 16px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  background: #fff;
+  flex-grow: 1;
+  font-family: Poppins, sans-serif;
+}
+
+.section-form button {
+    padding: 4px 15px;
+    height: 50px;
+    max-width: 150px;
+    font-size: 17px;
+    background: white;
+    border: 1px solid #396df2;
+    border-radius: 8px;
+    color: #396df2;
+}
+
 /* Adding cursor pointer */
 
 button,
