@@ -19,3 +19,7 @@
 
 - GitHub: [@orozCoding](https://github.com/orozCoding)
 - Twitter: [@orozCoding](https://twitter.com/orozCoding)
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
