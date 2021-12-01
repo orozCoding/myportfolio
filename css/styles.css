@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Mobile version*/
+/* Mobile version */
+
 /* Body general style */
 
 body,
@@ -411,13 +412,13 @@ button,
 
 @media screen and (min-width: 992px) {
   /* Body limited to 1100px */
-  
-html {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
+  html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   body {
     max-width: 1100px;
@@ -472,11 +473,12 @@ html {
     grid-column-start: 1;
     grid-row-start: 1;
   }
-  
- .my-works img {
+
+  .my-works img {
     max-width: 480px;
   }
-    /* About Section */
+  
+  /* About Section */
 
   .about-myself {
     display: grid;
@@ -489,7 +491,7 @@ html {
     margin-left: 50px;
   }
 
-  #languages-list{
+  #languages-list {
     flex-direction: row;
   }
 
@@ -532,5 +534,4 @@ html {
   .form-input {
     width: 320px;
   }
-
 }
