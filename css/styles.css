@@ -9,6 +9,7 @@ body,
   flex-direction: column;
   font-family: "Poppins", sans-serif;
   min-width: 360px;
+  background-color: #fafafa;
 }
 
 ul {
@@ -27,11 +28,12 @@ a {
 
 .head-bar {
   background-color: white;
-  margin-bottom: 12px;
+  margin-bottom: 0;
   margin-top: 5px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 0 10px 0;
 }
 
 .head-bar .logo {
@@ -57,6 +59,10 @@ a {
   background-image: url("../img/background/headlinebgmobile.png");
   background-size: 100%;
   display: flex;
+  border-bottom-left-radius: 100px;
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 .headline-content {
@@ -64,6 +70,7 @@ a {
   margin-left: 24px;
   margin-right: 24px;
   margin-top: 100px;
+  border-bottom-left-radius: 50px;
 }
 
 #headline-title,
@@ -152,7 +159,7 @@ p {
   margin: 0 24px 0 24px;
 }
 
-img {
+.card-preview {
   flex: 1 1 100%;
   width: 100%;
   max-width: 480px;
@@ -229,14 +236,16 @@ img {
 /* About Myself Section */
 
 .about-myself {
+  width: 100%;
   margin-top: 24px;
-  margin-bottom: 24px;
-  margin-left: 24px;
-  margin-right: 24px;
+  background-color: white;
+  border-top-right-radius: 100px;
+  padding-bottom: 0 0 200px 0;
 }
 
 .about-content {
   flex-direction: column;
+  padding: 30px 30px 30px 30px;
 }
 
 #about-title {
@@ -287,6 +296,7 @@ img {
 
 .experience {
   flex-grow: 1;
+  padding: 30px 30px 200px 30px;
 }
 
 .experience-list {
@@ -340,6 +350,7 @@ footer {
   background-repeat: no-repeat;
   background-position-x: right;
   border-top-left-radius: 100px;
+  margin-top: -130px;
 }
 
 .section-form,
@@ -351,7 +362,7 @@ footer {
 
 .section-form h2 {
   font-size: 40px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .section-form h2,
@@ -420,15 +431,15 @@ button,
     align-items: center;
   }
 
-  body {
-    max-width: 1100px;
-  }
-
   .body {
     min-width: 480px;
   }
 
   /* Header */
+
+.head-bar .logo {
+  margin-left: 80px;
+}
 
   .navbar {
     display: none;
@@ -437,6 +448,7 @@ button,
   .navbar-desktop {
     display: flex;
     flex-direction: row;
+    margin-right: 80px;
   }
 
   .navbar-desktop ul {
@@ -445,13 +457,17 @@ button,
 
   .headline {
     background-image: url(../img/background/headerbg.svg);
-    margin-bottom: 80px;
+    padding-bottom: 120px;
     background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 50px;
+    background-color: white;
   }
 
   .headline-content {
     max-width: 700px;
-    margin: 180px 120px 150px 120px;
+    /* margin: 180px 120px 150px 120px; */
     gap: 20px;
   }
 
@@ -468,6 +484,10 @@ button,
     gap: 50px;
   }
 
+  .card-info {
+    margin: 20px;
+  }
+
   #work-2 .card-info,
   #work-4 .card-info {
     grid-column-start: 1;
@@ -475,20 +495,28 @@ button,
   }
 
   .my-works img {
-    max-width: 480px;
+    flex: 1 1 100%;
+    width: 100%;
+    width: 544px;
+    max-width: 544px;
+    align-self: center;
   }
 
   /* About Section */
 
-  .about-myself {
+  .about-myself-container {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
-    margin: 100px 0 120px 0;
     gap: 50px;
+    padding: 100px 0 150px 0;
   }
 
   .about-content {
     margin-left: 50px;
+  }
+
+  .experience {
+    margin-right: 50px;
   }
 
   #languages-list {
@@ -496,20 +524,18 @@ button,
   }
 
   .language {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    padding: 30px;
-  }
-
-  .language img {
-    max-width: 100%;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
   }
 
   .language p {
     margin: 0;
+    padding: 0;
   }
 
   /* Contact Me section */
