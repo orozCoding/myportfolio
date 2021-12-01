@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Mobile version*/
 /* Body general style */
-body {
+body,
+.body {
   flex-direction: column;
   font-family: "Poppins", sans-serif;
   min-width: 360px;
 }
 
-body {
-  max-width: 1100px;
-}
-
 ul {
   list-style: none;
   padding: 0;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
 }
 
 /* Header */
@@ -40,6 +43,10 @@ ul {
   margin-right: 24px;
   border: none;
   background-color: white;
+}
+
+.navbar-desktop {
+  display: none;
 }
 
 /* Headline */
@@ -208,7 +215,7 @@ img {
 .work-button {
   padding: 4px 15px;
   height: 90px;
-  max-width: 120px;
+  max-width: 130px;
   font-size: 17px;
   background: white;
   border: 1px solid #396df2;
@@ -401,5 +408,30 @@ button,
 }
 
 @media screen and (min-width: 992px) {
+  /* Body limited to 1100px */
   
+  body {
+    max-width: 1100px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 5%;
+  }
+
+  /* Header */
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar-desktop {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .headline {
+    background-image: url(../img/background/headerbg.svg);
+  }
+
 }
