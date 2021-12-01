@@ -2,6 +2,7 @@
 
 /* Mobile version*/
 /* Body general style */
+
 body,
 .body {
   flex-direction: column;
@@ -152,7 +153,8 @@ p {
 
 img {
   flex: 1 1 100%;
-  max-width: 295px;
+  width: 100%;
+  max-width: 480px;
   align-self: center;
 }
 
@@ -214,7 +216,7 @@ img {
 
 .work-button {
   padding: 4px 15px;
-  height: 90px;
+  height: 45px;
   max-width: 130px;
   font-size: 17px;
   background: white;
@@ -410,12 +412,20 @@ button,
 @media screen and (min-width: 992px) {
   /* Body limited to 1100px */
   
+html {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
   body {
     max-width: 1100px;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 5%;
+  }
+
+  .body {
+    min-width: 480px;
+    
   }
 
   /* Header */
@@ -429,9 +439,33 @@ button,
     flex-direction: row;
   }
 
-
   .headline {
     background-image: url(../img/background/headerbg.svg);
+  }
+
+  /* Portfolio - Cards */
+
+  .work-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+
+  #work-2 .card-info,
+  #work-4 .card-info {
+    grid-column-start: 1;
+    grid-row-start: 1
+  }
+  
+ .my-works img {
+    max-width: 480px;
+  }
+
+  /* About Section */
+
+  .about-myself {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
   }
 
 }
