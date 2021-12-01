@@ -240,7 +240,6 @@ p {
   margin-top: 24px;
   background-color: white;
   border-top-right-radius: 100px;
-  padding-bottom: 0 0 200px 0;
 }
 
 .about-content {
@@ -437,9 +436,9 @@ button,
 
   /* Header */
 
-.head-bar .logo {
-  margin-left: 80px;
-}
+  .head-bar .logo {
+    margin-left: 80px;
+  }
 
   .navbar {
     display: none;
@@ -467,7 +466,6 @@ button,
 
   .headline-content {
     max-width: 700px;
-    /* margin: 180px 120px 150px 120px; */
     gap: 20px;
   }
 
