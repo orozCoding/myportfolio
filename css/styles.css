@@ -424,8 +424,7 @@ html {
   }
 
   .body {
-    min-width: 480px;
-    
+    min-width: 480px; 
   }
 
   /* Header */
@@ -441,6 +440,12 @@ html {
 
   .headline {
     background-image: url(../img/background/headerbg.svg);
+    margin-bottom: 80px;
+  }
+
+  .headline-content {
+    max-width: 700px;
+    margin: 180px 120px 0 180px;
   }
 
   /* Portfolio - Cards */
@@ -487,5 +492,11 @@ html {
   .language p {
     margin: 0;
   }
-  
+
+  /* Contact Me section */
+
+  footer {
+    background-image: url(../img/background/footerbgdesk.svg);
+  }
+
 }
