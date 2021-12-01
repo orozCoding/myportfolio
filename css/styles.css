@@ -438,14 +438,24 @@ html {
     flex-direction: row;
   }
 
+  .navbar-desktop ul {
+    gap: 40px;
+  }
+
   .headline {
     background-image: url(../img/background/headerbg.svg);
     margin-bottom: 80px;
+    background-repeat: no-repeat;
   }
 
   .headline-content {
     max-width: 700px;
-    margin: 180px 120px 0 180px;
+    margin: 180px 120px 150px 120px;
+    gap: 20px;
+  }
+
+  .headline-content h2 {
+    margin-top: 10px;
   }
 
   /* Portfolio - Cards */
@@ -454,6 +464,12 @@ html {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
+    gap:50px;
+
+  }
+
+  .work-card img {
+    margin-left: ;
   }
 
   #work-2 .card-info,
@@ -469,7 +485,13 @@ html {
 
   .about-myself {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
+    margin: 100px 0 120px 0;
+    gap: 50px;
+  }
+
+  .about-content {
+    margin-left: 50px;
   }
 
   #languages-list{
@@ -496,7 +518,24 @@ html {
   /* Contact Me section */
 
   footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-image: url(../img/background/footerbgdesk.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .section-form {
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    padding: 50px;
+    padding-bottom: 70px;
+  }
+
+  .form-input {
+    width: 320px;
   }
 
 }
