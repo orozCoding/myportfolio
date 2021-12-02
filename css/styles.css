@@ -458,7 +458,6 @@ button:hover {
 }
 
 @media screen and (min-width: 992px) {
-
   html {
     display: flex;
     flex-direction: column;
