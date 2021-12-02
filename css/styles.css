@@ -424,6 +424,7 @@ footer {
 button,
 .clickeable {
   cursor: pointer;
+  transition: all 0.2s linear;
 }
 
 button:hover {
@@ -479,6 +480,7 @@ button:hover {
 
   .navbar-desktop a {
     color: #344563;
+    transition: all 0.2s linear;
   }
 
   .navbar-desktop a:hover {
@@ -611,6 +613,7 @@ button:hover {
 
   .form-input button {
     align-self: center;
+    transition: all 0.2s linear;
   }
 
   .form-input button:hover {
