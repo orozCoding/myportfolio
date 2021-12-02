@@ -169,6 +169,11 @@ p {
   width: 100%;
   max-width: 480px;
   align-self: center;
+  transition: all 1s;
+}
+
+.card-preview:hover {
+  transform: scale(0.9);
 }
 
 .work-title {
