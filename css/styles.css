@@ -1,20 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Mobile version */
+
 /* Body general style */
-body {
-  flex-direction: column;
+
+html {
+  height: 100%;
   font-family: "Poppins", sans-serif;
-  min-width: 360px;
 }
 
-/* Temporal Mobile limitation */
-body {
-  max-width: 500px;
+body,
+.body {
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
 }
 
 ul {
   list-style: none;
   padding: 0;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
 }
 
 /* Header */
@@ -23,11 +34,12 @@ ul {
 
 .head-bar {
   background-color: white;
-  margin-bottom: 12px;
+  margin-bottom: 0;
   margin-top: 5px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 0 10px 0;
 }
 
 .head-bar .logo {
@@ -43,19 +55,29 @@ ul {
   background-color: white;
 }
 
+.navbar-desktop {
+  display: none;
+}
+
 /* Headline */
 
 .headline {
   background-image: url("../img/background/headlinebgmobile.png");
   background-size: 100%;
+  background-repeat: no-repeat;
   display: flex;
+  border-bottom-left-radius: 100px;
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 .headline-content {
   flex-direction: column;
   margin-left: 24px;
   margin-right: 24px;
-  margin-top: 100px;
+  margin-top: 60px;
+  border-bottom-left-radius: 50px;
 }
 
 #headline-title,
@@ -68,11 +90,6 @@ ul {
   color: #172b4d;
 }
 
-#headline-title {
-  margin-top: -10px;
-  margin-bottom: -30px;
-}
-
 #headline-subtitle {
   margin-bottom: 5px;
 }
@@ -83,7 +100,10 @@ ul {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 0;
+}
+
+.headline-info {
+  margin-bottom: 20px;
 }
 
 .headline-action {
@@ -93,7 +113,7 @@ ul {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .headline-icons {
@@ -144,9 +164,10 @@ p {
   margin: 0 24px 0 24px;
 }
 
-img {
+.card-preview {
   flex: 1 1 100%;
-  max-width: 295px;
+  width: 100%;
+  max-width: 480px;
   align-self: center;
 }
 
@@ -195,6 +216,7 @@ img {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -208,8 +230,8 @@ img {
 
 .work-button {
   padding: 4px 15px;
-  height: 90px;
-  max-width: 120px;
+  height: 45px;
+  max-width: 130px;
   font-size: 17px;
   background: white;
   border: 1px solid #396df2;
@@ -220,14 +242,15 @@ img {
 /* About Myself Section */
 
 .about-myself {
+  width: 100%;
   margin-top: 24px;
-  margin-bottom: 24px;
-  margin-left: 24px;
-  margin-right: 24px;
+  background-color: white;
+  border-top-right-radius: 100px;
 }
 
 .about-content {
   flex-direction: column;
+  padding: 30px 30px 30px 30px;
 }
 
 #about-title {
@@ -263,6 +286,7 @@ img {
   flex-direction: row;
   gap: 25px;
   justify-content: start;
+  margin-bottom: 20px;
 }
 
 .about-button {
@@ -278,6 +302,7 @@ img {
 
 .experience {
   flex-grow: 1;
+  padding: 30px 30px 200px 30px;
 }
 
 .experience-list {
@@ -331,6 +356,7 @@ footer {
   background-repeat: no-repeat;
   background-position-x: right;
   border-top-left-radius: 100px;
+  margin-top: -130px;
 }
 
 .section-form,
@@ -342,7 +368,8 @@ footer {
 
 .section-form h2 {
   font-size: 40px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  font-weight: bold;
 }
 
 .section-form h2,
@@ -353,6 +380,10 @@ footer {
 .section-form {
   margin: 0 24px 0 24px;
   padding: 55px 0 55px 0;
+}
+
+.contact-title-info {
+  margin-top: 30px;
 }
 
 .contact-info {
@@ -384,11 +415,20 @@ footer {
   color: #396df2;
 }
 
+.section-form .button:hover {
+  background-color: lightgray;
+}
+
 /* Adding cursor pointer */
 
 button,
 .clickeable {
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #6070ff;
+  color: white;
 }
 
 /* Displays */
@@ -399,4 +439,181 @@ button,
 
 .d-grid {
   display: grid;
+}
+
+@media screen and (min-width: 992px) {
+  /* Body limited to 1100px */
+
+  html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  p {
+    line-height: 24px;
+  }
+
+  .body {
+    min-width: 480px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* Header */
+
+  .head-bar .logo {
+    margin-left: 80px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar-desktop {
+    display: flex;
+    flex-direction: row;
+    margin-right: 80px;
+  }
+
+  .navbar-desktop a {
+    color: #344563;
+  }
+
+  .navbar-desktop a:hover {
+    color: blue;
+  }
+
+  .navbar-desktop ul {
+    gap: 40px;
+  }
+
+  .headline {
+    background-image: url(../img/background/headerbg.svg);
+    padding-bottom: 120px;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 50px;
+    background-color: white;
+  }
+
+  #headline-title {
+    margin-top: -10px;
+    margin-bottom: -30px;
+  }
+
+  .headline-content {
+    max-width: 700px;
+    gap: 20px;
+  }
+
+  .headline-content h2 {
+    margin-top: 10px;
+  }
+
+  /* Portfolio - Cards */
+
+  .work-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 50px;
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 10px;
+  }
+
+  #work-2 .card-info,
+  #work-4 .card-info {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .my-works img {
+    flex: 1 1 100%;
+    width: 100%;
+    width: 544px;
+    max-width: 544px;
+    align-self: center;
+  }
+
+  /* About Section */
+
+  .about-myself-container {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 50px;
+    padding: 100px 0 150px 0;
+  }
+
+  .about-content {
+    margin-left: 50px;
+  }
+
+  .experience {
+    margin-right: 50px;
+  }
+
+  .experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #languages-list {
+    flex-direction: row;
+  }
+
+  .language {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+  }
+
+  .language p {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Contact Me section */
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/background/footerbgdesk.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .section-form {
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    padding: 50px;
+    padding-bottom: 70px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .form-input {
+    width: 320px;
+  }
+
+  .form-input button {
+    align-self: center;
+  }
+
+  .form-input button:hover {
+    background-color: lightgray;
+  }
 }
