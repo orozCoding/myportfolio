@@ -47,6 +47,13 @@ a {
   color: #6070ff;
   margin-left: 24px;
   line-height: 20px;
+  animation: logodisplay 1s;
+}
+
+@keyframes logodisplay {
+  from {
+    transform: rotate(-90deg);
+  }
 }
 
 .head-bar .menu {
@@ -173,7 +180,7 @@ p {
 }
 
 .card-preview:hover {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 .work-title {
@@ -429,6 +436,9 @@ footer {
 button,
 .clickeable {
   cursor: pointer;
+}
+
+button {
   transition: all 0.2s linear;
 }
 
@@ -448,7 +458,6 @@ button:hover {
 }
 
 @media screen and (min-width: 992px) {
-  /* Body limited to 1100px */
 
   html {
     display: flex;
