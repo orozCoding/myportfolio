@@ -4,6 +4,11 @@
 
 > Personal Portfolio Webpage showing my (future) projects.
 
+## Preview
+
+![Preview Mobile](img/previewmobile.png)
+![Preview Desktop](img/previewdesktop.png)
+
 ## Live Demo
 
 [Live Demo](https://orozcoding.github.io/myportfolio/)
