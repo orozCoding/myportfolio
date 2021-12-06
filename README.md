@@ -12,7 +12,7 @@
 ## Live Demo
 
 Visit My Portfolio with the following link:
-[Website](https://orozcoding.github.io/myportfolio/)
+[My Portfolio Website](https://orozcoding.github.io/myportfolio/)
 
 ## Built With
 
