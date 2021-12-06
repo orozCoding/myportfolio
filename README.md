@@ -11,7 +11,8 @@
 
 ## Live Demo
 
-[Live Demo](https://orozcoding.github.io/myportfolio/)
+Visit My Portfolio with the following link:
+[Website](https://orozcoding.github.io/myportfolio/)
 
 ## Built With
 
