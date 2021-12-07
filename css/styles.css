@@ -123,10 +123,6 @@ a {
   margin-bottom: 20px;
 }
 
-.headline-action:hover {
-  color: black;
-}
-
 .headline-icons {
   flex-direction: row;
   gap: 25px;
@@ -296,10 +292,6 @@ p {
   line-height: 24px;
   color: #1026EA;
   margin-bottom: 14px;
-}
-
-#about-action:hover {
-  color: black;
 }
 
 .about-icons {
@@ -640,4 +632,8 @@ button:hover {
   .form-input button:hover {
     background-color: lightgray;
   }
+}
+
+.focus:focus {
+  border: solid 3px black;
 }
