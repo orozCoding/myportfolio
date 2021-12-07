@@ -44,7 +44,7 @@ a {
 
 .head-bar .logo {
   font-weight: bold;
-  color: #6070ff;
+  color: #1026ea;
   margin-left: 24px;
   line-height: 20px;
   animation: logodisplay 1s;
@@ -116,10 +116,10 @@ a {
 .headline-action {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #1026ea;
   margin-bottom: 20px;
 }
 
@@ -234,21 +234,20 @@ p {
 
 .tag-button {
   padding: 4px 12px;
-  color: #6070ff;
+  color: #1026ea;
   background: #ebebff;
   border-radius: 8px;
   border: none;
 }
 
 .work-button {
-  padding: 4px 15px;
-  height: 45px;
-  max-width: 130px;
+  padding: 10px 25px;
+  width: fit-content;
   font-size: 17px;
   background: white;
-  border: 1px solid #396df2;
+  border: 1px solid #1026ea;
   border-radius: 8px;
-  color: #396df2;
+  color: #1026ea;
 }
 
 /* About Myself Section */
@@ -287,10 +286,10 @@ p {
 #about-action {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #1026ea;
   margin-bottom: 14px;
 }
 
@@ -302,14 +301,13 @@ p {
 }
 
 .about-button {
-  padding: 4px 15px;
-  height: 50px;
-  max-width: 150px;
+  padding: 10px 25px;
+  width: fit-content;
   font-size: 17px;
   background: white;
-  border: 1px solid #396df2;
+  border: 1px solid #1026ea;
   border-radius: 8px;
-  color: #396df2;
+  color: #1026ea;
 }
 
 .experience {
@@ -417,14 +415,13 @@ footer {
 }
 
 .section-form .button {
-  padding: 4px 15px;
-  height: 50px;
-  max-width: 150px;
+  padding: 10px 25px;
+  width: fit-content;
   font-size: 17px;
   background: white;
-  border: 1px solid #396df2;
+  border: 1px solid #1026ea;
   border-radius: 8px;
-  color: #396df2;
+  color: #1026ea;
 }
 
 .section-form .button:hover {
@@ -443,7 +440,7 @@ button {
 }
 
 button:hover {
-  background-color: #6070ff;
+  background-color: #1026ea;
   color: white;
 }
 
@@ -590,8 +587,8 @@ button:hover {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
     padding: 5px;
   }
 
@@ -632,4 +629,8 @@ button:hover {
   .form-input button:hover {
     background-color: lightgray;
   }
+}
+
+.focus:focus {
+  border: solid 3px black;
 }
