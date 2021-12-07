@@ -44,7 +44,7 @@ a {
 
 .head-bar .logo {
   font-weight: bold;
-  color: #6070ff;
+  color: #1026EA;
   margin-left: 24px;
   line-height: 20px;
   animation: logodisplay 1s;
@@ -116,11 +116,15 @@ a {
 .headline-action {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #1026EA;
   margin-bottom: 20px;
+}
+
+.headline-action:hover {
+  color: black;
 }
 
 .headline-icons {
@@ -234,21 +238,21 @@ p {
 
 .tag-button {
   padding: 4px 12px;
-  color: #6070ff;
+  color: #1026EA;
   background: #ebebff;
   border-radius: 8px;
   border: none;
 }
 
 .work-button {
-  padding: 4px 15px;
-  height: 45px;
-  max-width: 130px;
+  padding: 10px 25px;
+  height: fit-content;
+  width: fit-content;
   font-size: 17px;
   background: white;
-  border: 1px solid #396df2;
+  border: 1px solid #1026EA;
   border-radius: 8px;
-  color: #396df2;
+  color: #1026EA;
 }
 
 /* About Myself Section */
@@ -287,11 +291,15 @@ p {
 #about-action {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #1026EA;
   margin-bottom: 14px;
+}
+
+#about-action:hover {
+  color: black;
 }
 
 .about-icons {
@@ -302,14 +310,14 @@ p {
 }
 
 .about-button {
-  padding: 4px 15px;
-  height: 50px;
-  max-width: 150px;
+  padding: 10px 25px;
+  height: fit-content;
+  width: fit-content;
   font-size: 17px;
   background: white;
-  border: 1px solid #396df2;
+  border: 1px solid #1026EA;
   border-radius: 8px;
-  color: #396df2;
+  color: #1026EA;
 }
 
 .experience {
@@ -417,14 +425,14 @@ footer {
 }
 
 .section-form .button {
-  padding: 4px 15px;
-  height: 50px;
-  max-width: 150px;
+  padding: 10px 25px;
+  height: fit-content;
+  width: fit-content;
   font-size: 17px;
   background: white;
-  border: 1px solid #396df2;
+  border: 1px solid #1026EA;
   border-radius: 8px;
-  color: #396df2;
+  color: #1026EA;
 }
 
 .section-form .button:hover {
@@ -443,7 +451,7 @@ button {
 }
 
 button:hover {
-  background-color: #6070ff;
+  background-color: #1026EA;
   color: white;
 }
 
@@ -590,8 +598,8 @@ button:hover {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
     padding: 5px;
   }
 
