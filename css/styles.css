@@ -44,7 +44,7 @@ a {
 
 .head-bar .logo {
   font-weight: bold;
-  color: #1026EA;
+  color: #1026ea;
   margin-left: 24px;
   line-height: 20px;
   animation: logodisplay 1s;
@@ -119,7 +119,7 @@ a {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #1026EA;
+  color: #1026ea;
   margin-bottom: 20px;
 }
 
@@ -234,7 +234,7 @@ p {
 
 .tag-button {
   padding: 4px 12px;
-  color: #1026EA;
+  color: #1026ea;
   background: #ebebff;
   border-radius: 8px;
   border: none;
@@ -242,13 +242,12 @@ p {
 
 .work-button {
   padding: 10px 25px;
-  height: fit-content;
   width: fit-content;
   font-size: 17px;
   background: white;
-  border: 1px solid #1026EA;
+  border: 1px solid #1026ea;
   border-radius: 8px;
-  color: #1026EA;
+  color: #1026ea;
 }
 
 /* About Myself Section */
@@ -290,7 +289,7 @@ p {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #1026EA;
+  color: #1026ea;
   margin-bottom: 14px;
 }
 
@@ -303,13 +302,12 @@ p {
 
 .about-button {
   padding: 10px 25px;
-  height: fit-content;
   width: fit-content;
   font-size: 17px;
   background: white;
-  border: 1px solid #1026EA;
+  border: 1px solid #1026ea;
   border-radius: 8px;
-  color: #1026EA;
+  color: #1026ea;
 }
 
 .experience {
@@ -418,13 +416,12 @@ footer {
 
 .section-form .button {
   padding: 10px 25px;
-  height: fit-content;
   width: fit-content;
   font-size: 17px;
   background: white;
-  border: 1px solid #1026EA;
+  border: 1px solid #1026ea;
   border-radius: 8px;
-  color: #1026EA;
+  color: #1026ea;
 }
 
 .section-form .button:hover {
@@ -443,7 +440,7 @@ button {
 }
 
 button:hover {
-  background-color: #1026EA;
+  background-color: #1026ea;
   color: white;
 }
 
