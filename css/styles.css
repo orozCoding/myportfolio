@@ -9,7 +9,10 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-a, a:visited, a:hover, a:active {
+a,
+a:visited,
+a:hover,
+a:active {
   color: inherit;
 }
 
@@ -94,7 +97,7 @@ a {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #ffffff;
+  color: #fff;
 }
 
 #menu-overlay .container div {
