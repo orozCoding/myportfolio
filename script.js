@@ -1,7 +1,7 @@
-let menuOverlay = document.querySelector('#menu-overlay');
-let burgerIcon = document.querySelector('#burger-icon');
-let xIcon = document.querySelector('.xicon-image');
-let menuButtons = document.querySelectorAll('#menu-overlay a');
+const menuOverlay = document.querySelector('#menu-overlay');
+const burgerIcon = document.querySelector('#burger-icon');
+const xIcon = document.querySelector('.xicon-image');
+const menuButtons = document.querySelectorAll('#menu-overlay a');
 
 function overlayOn() {
   menuOverlay.classList.remove('d-off');
@@ -13,7 +13,7 @@ function overlayOff() {
   document.body.classList.remove('no-scroll');
 }
 
-for (let i = 0; i < menuButtons.length; i++) {
+for (let i = 0; i < menuButtons.length; i+=1) {
   menuButtons[i].addEventListener('click', overlayOff);
 }
 
