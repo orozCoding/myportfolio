@@ -69,12 +69,21 @@ a {
 /* Menu Overlay */
 
 #menu-overlay {
-  position: fixed;
-  background-color: blue;
-  height: 100%;
+  position: absolute;
   width: 100%;
+  height: 100%;
+  background-color: #6070ff;
 }
 
+.xicon-image {
+  text-align: right;
+  padding: 24px;
+  margin: 0;
+}
+
+.d-off {
+  display: none;
+}
 
 /* Headline */
 
@@ -643,20 +652,4 @@ button:hover {
 
 .focus:focus {
   border: solid 3px black;
-}
-#menu-overlay {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #6070ff;
-
-}
-
-
-.xicon-image {
-  text-align: right;
-  padding: 24px;
-  margin: 0;
-
 }
