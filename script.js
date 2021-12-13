@@ -13,7 +13,7 @@ function overlayOff() {
   document.body.classList.remove('no-scroll');
 }
 
-for (let i = 0; i < menuButtons.length; i+=1) {
+for (let i = 0; i < menuButtons.length; i + = 1) {
   menuButtons[i].addEventListener('click', overlayOff);
 }
 
