@@ -699,15 +699,13 @@ button:hover {
 }
 
 #modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid #fff;
-  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
   z-index: 10;
-  background-color: #fff;
-  min-width: none;
+  align-items: center;
 }
 
 .modal-container {
@@ -719,7 +717,9 @@ button:hover {
   padding: 20px 15px 20px 15px;
   gap: 10px;
   min-width: none;
-  max-height: 400px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
 }
 
 .modal-container .d-flex {
@@ -731,15 +731,19 @@ button:hover {
 }
 
 .modal-container .work-title {
-  font-size: 20px;
+  font-size: 32px;
 }
 
-.modal-container .work-info {
-  font-size: 10px;
+.modal-container .work-info,
+.modal-container .work-info .job,
+.modal-container .work-info .year {
+  font-size: 13px;
+  padding: 1px;
 }
 
 .modal-container .work-description {
-  font-size: 3vw;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .modal-container .modal-preview {
@@ -748,7 +752,7 @@ button:hover {
 }
 
 .modal-container button {
-  font-size: 3vw;
+  font-size: 0.7em;
 }
 
 .modal-buttons {
@@ -757,17 +761,21 @@ button:hover {
 }
 
 .modal-buttons button {
-  font-size: 15px;
   width: fit-content;
   padding-top: 5px;
   padding-right: 0px;
   padding-left: 0px;
-  padding-bottom: 5px;
 }
 
 .modal-buttons button p {
   margin: 0;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 10px;
+}
+
+.modal-buttons img {
+  max-width: 15px;
+  max-height: 15px;
 }
 
