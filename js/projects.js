@@ -177,41 +177,46 @@ function modalDisplay () {
   let modal = document.createElement('div');
   modal.id = 'modal';
   modal.className = 'd-flex';
-  modal.innerHTML = `<div class="modal-container d-flex">
-  <div class="d-flex">
-      <div class="work-title d-flex"><h3>${project.title}</h3></div>
-      <div class="modal-close-btn" id="modal-close-btn"><img src="img/icon/xiconblack.png" alt="Close Icon"></div>
-  </div>
-  <div class="work-info d-flex">
-      <div class="client d-flex">${project.client}</div>
-      <div class="counter d-flex"></div>
-      <div class="job d-flex"><p>${project.job}</p></div>
-      <div class="counter d-flex"></div>
-      <div class="year d-flex">${project.year}</div>
-  </div>
-  <div class="modal-preview d-flex"><img src="${project.img}" alt="${project.alt}" class="card-preview"></div>
-  <div class="work-description d-flex"><p>${project.details}</p></div>
-  <div class="modal-tags d-flex">
-      <ul class="work-tags d-flex">
-          <li><button type="button" class="tag-button focus">${project.tag1}</button></li>
-          <li><button type="button" class="tag-button focus">${project.tag2}</button></li>
-          <li><button type="button" class="tag-button focus">${project.tag3}</button></li>
-      </ul>
-  </div>
-  <div class="modal-buttons d-flex">
-      <div class="modal-live-btn d-flex">
-          <button type="button" name="see-project" class="work-button focus">
-              <p>See Live</p>
-              <img src="img/icon/iconlive.png" alt="Go Live Icon">
-          </button>
+  modal.innerHTML = `
+  <div class="modal-container d-flex">
+    <div class="d-flex">
+        <div class="work-title d-flex"><h3>${project.title}</h3></div>
+        <div class="modal-close-btn" id="modal-close-btn"><img src="img/icon/xiconblack.png" alt="Close Icon"></div>
+    </div>
+    <div class="work-info d-flex">
+        <div class="client d-flex">${project.client}</div>
+        <div class="counter d-flex"></div>
+        <div class="job d-flex"><p>${project.job}</p></div>
+        <div class="counter d-flex"></div>
+        <div class="year d-flex">${project.year}</div>
+    </div>
+    <div class="modal-preview d-flex"><img src="${project.img}" alt="${project.alt}" class="card-preview"></div>
+    <div class="modal-details-and-buttons d-flex">
+      <div class="work-description d-flex"><p>${project.details}</p></div>
+      <div class="modal-full-buttons d-flex">
+        <div class="modal-tags d-flex">
+            <ul class="work-tags d-flex">
+                <li><button type="button" class="tag-button focus">${project.tag1}</button></li>
+                <li><button type="button" class="tag-button focus">${project.tag2}</button></li>
+                <li><button type="button" class="tag-button focus">${project.tag3}</button></li>
+            </ul>
+        </div>
+        <div class="modal-buttons d-flex">
+            <div class="modal-live-btn d-flex">
+                <button type="button" name="see-project" class="work-button focus">
+                    <p>See Live</p>
+                    <img src="img/icon/iconlive.png" alt="Go Live Icon">
+                </button>
+            </div>
+            <div class="modal-close-btn d-flex">
+                <button type="button" name="see-project" class="work-button focus">
+                    <p>See Source</p>
+                    <img src="img/icon/iconghblue.png" alt="Go Live Icon">
+                </button>
+            </div>
+        </div>
       </div>
-      <div class="modal-close-btn d-flex">
-          <button type="button" name="see-project" class="work-button focus">
-              <p>See Source</p>
-              <img src="img/icon/iconghblue.png" alt="Go Live Icon">
-          </button>
-      </div>
-  </div>
+    </div>
   </div>`;
 
   document.body.appendChild(overlay);
@@ -233,3 +238,4 @@ const workBtn = document.querySelectorAll('.work-button');
 workBtn.forEach((element) => {
   element.addEventListener('click', modalDisplay);
 });
+
