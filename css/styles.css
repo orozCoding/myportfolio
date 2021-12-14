@@ -696,11 +696,9 @@ button:hover {
   bottom: 0;
   background-color: #c1c7d0;
   opacity: 0.8;
-  display: none;
 }
 
 #modal {
-  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -709,24 +707,27 @@ button:hover {
   border-radius: 10px;
   z-index: 10;
   background-color: #fff;
-  width: 340px;
-  max-width: 80%;
-  height: 500px;
-  max-height: 80%;
+  min-width: none;
 }
 
 .modal-container {
   display: flex;
+  flex-shrink: 1;
   flex-direction: column;
   justify-content: space-between;
   align-items: space-between;
-  padding: 5px 15px 5px 15px;
-  gap: 2px;
+  padding: 20px 15px 20px 15px;
+  gap: 10px;
+  min-width: none;
+  max-height: 400px;
 }
 
 .modal-container .d-flex {
+  display: flex;
   min-width: 0;
+  min-height: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 .modal-container .work-title {
@@ -738,16 +739,16 @@ button:hover {
 }
 
 .modal-container .work-description {
-  font-size: 13px;
+  font-size: 3vw;
 }
 
 .modal-container .modal-preview {
-  max-width: 80%;
+  max-width: 95%;
   align-self: center;
 }
 
 .modal-container button {
-  font-size: 12px;
+  font-size: 3vw;
 }
 
 .modal-buttons {
@@ -756,7 +757,7 @@ button:hover {
 }
 
 .modal-buttons button {
-  font-size: 15x;
+  font-size: 15px;
   width: fit-content;
   padding-top: 5px;
   padding-right: 0px;
