@@ -729,6 +729,11 @@ button:hover {
   overflow: hidden;
 }
 
+.modal-container > div {
+  align-items: center;
+  justify-content: space-between;
+}
+
 .modal-container .work-title {
   font-size: 20px;
 }
@@ -784,3 +789,4 @@ button:hover {
   max-width: 15px;
   max-height: 15px;
 }
+
