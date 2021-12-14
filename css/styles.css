@@ -685,3 +685,86 @@ button:hover {
 .no-scroll {
   overflow: hidden;
 }
+
+/* Modals Styling */
+
+#overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #c1c7d0;
+  opacity: 0.8;
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #fff;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #fff;
+  width: 340px;
+  max-width: 80%;
+  height: 500px;
+  max-height: 80%;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  padding: 5px 15px 5px 15px;
+  gap: 2px;
+}
+
+.modal-container .d-flex {
+  min-width: 0;
+  margin: 0;
+}
+
+.modal-container .work-title {
+  font-size: 20px;
+}
+
+.modal-container .work-info {
+  font-size: 10px;
+}
+
+.modal-container .work-description {
+  font-size: 13px;
+}
+
+.modal-container .modal-preview {
+  max-width: 80%;
+  align-self: center;
+}
+
+.modal-container button {
+  font-size: 12px;
+}
+
+.modal-buttons {
+  justify-content: center;
+  gap: 20px
+}
+
+.modal-buttons button {
+  font-size: 15x;
+  width: fit-content;
+  padding-top: 5px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 5px;
+}
+
+.modal-buttons button p {
+  margin: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
