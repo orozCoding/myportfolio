@@ -39,3 +39,18 @@ const project3 = {
   tag2: 'css',
   tag3: 'javaScript'
 }
+const project4 = {
+  id: 'work-4',
+  alt: 'Work Four Preview',
+  title: 'Tonic',
+  client: 'CANOPY',
+  job: 'Back End Dev',
+  year: '2015',
+  img: 'img/works/work4.png',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  tag1: 'html',
+  tag2: 'css',
+  tag3: 'javaScript'
+}
+
+const projects = [project1, project2, project3, project4];
