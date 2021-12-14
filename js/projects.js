@@ -10,7 +10,8 @@ const project1 = {
   tag1: 'html',
   tag2: 'css',
   tag3: 'javaScript',
-  btnId: 'work-btn-1'
+  btnId: 'work-btn-1',
+  details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent'
 }
 
 const project2 = {
@@ -25,7 +26,8 @@ const project2 = {
   tag1: 'html',
   tag2: 'css',
   tag3: 'javaScript',
-  btnId: 'work-btn-2'
+  btnId: 'work-btn-2',
+  details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent'
 }
 
 const project3 = {
@@ -40,7 +42,8 @@ const project3 = {
   tag1: 'html',
   tag2: 'css',
   tag3: 'javaScript',
-  btnId: 'work-btn-3'
+  btnId: 'work-btn-3',
+  details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent'
 }
 
 const project4 = {
@@ -55,7 +58,8 @@ const project4 = {
   tag1: 'html',
   tag2: 'css',
   tag3: 'javaScript',
-  btnId: 'work-btn-4'
+  btnId: 'work-btn-4',
+  details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent'
 }
 
 const projects = [project1, project2, project3, project4];
@@ -184,7 +188,7 @@ function modalDisplay () {
       <div class="year d-flex">${project.year}</div>
   </div>
   <div class="modal-preview d-flex"><img src="${project.img}" alt="${project.alt}" class="card-preview"></div>
-  <div class="work-description d-flex"><p>${project.description}</p></div>
+  <div class="work-description d-flex"><p>${project.details}</p></div>
   <div class="modal-tags d-flex">
       <ul class="work-tags d-flex">
           <li><button type="button" class="tag-button focus">${project.tag1}</button></li>
@@ -227,8 +231,3 @@ const workBtn = document.querySelectorAll('.work-button');
 workBtn.forEach((element) => {
   element.addEventListener('click', modalDisplay);
 })
-
-
-
-
-

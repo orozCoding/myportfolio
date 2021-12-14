@@ -790,3 +790,6 @@ button:hover {
   max-height: 15px;
 }
 
+.modal-close-btn:hover {
+  cursor: pointer;
+}
