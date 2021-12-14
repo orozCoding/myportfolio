@@ -159,15 +159,6 @@ for (let i = 0; i < projects.length; i += 1) {
 
 // modals script
 
-let modal;
-let overlay;
-
-function modalClose() {
-  modal.remove();
-  overlay.remove();
-  document.body.classList.remove('no-scroll');
-}
-
 function modalDisplay() {
   let project;
   if (this.id === project1.btnId) {
@@ -234,6 +225,12 @@ function modalDisplay() {
 
   const modalCloseBtn = document.querySelector('#modal-close-btn');
   modalCloseBtn.addEventListener('click', modalClose);
+}
+
+function modalClose () {
+  modal.remove();
+  overlay.remove();
+  document.body.classList.remove('no-scroll');
 }
 
 const workBtn = document.querySelectorAll('.work-button');

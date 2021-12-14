@@ -758,12 +758,12 @@ button:hover {
     width: 320px;
   }
 
-  .form-input button {
+  .form-input .button {
     align-self: center;
     transition: all 0.2s linear;
   }
 
-  .form-input button:hover {
+  .form-input .button:hover {
     background-color: lightgray;
   }
 
@@ -837,7 +837,7 @@ button:hover {
 
   .modal-buttons {
     justify-content: center;
-    gap: 20px
+    gap: 20px;
   }
 
   .modal-buttons button {
@@ -870,7 +870,7 @@ button:hover {
   .modal-close-btn:hover {
     cursor: pointer;
   }
-  
+
   .modal-details-and-buttons {
     flex-direction: row;
     flex-wrap: nowrap;
