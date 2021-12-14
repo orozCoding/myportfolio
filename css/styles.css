@@ -488,7 +488,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: space-between;
   padding: 5px 5px 5px 5px;
   gap: 5px;
   background-color: #fff;
@@ -542,7 +541,6 @@ button:hover {
   font-size: 11px;
 }
 
-
 .modal-container .modal-preview {
   width: 250px;
   align-self: center;
@@ -554,7 +552,7 @@ button:hover {
 
 .modal-buttons {
   justify-content: center;
-  gap: 20px
+  gap: 20px;
 }
 
 .modal-buttons button {
@@ -786,7 +784,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: space-between;
     padding: 20px 10px 20px 10px;
     gap: 10px;
     background-color: #fff;
@@ -874,7 +871,7 @@ button:hover {
     cursor: pointer;
   }
   
-  .modal-details-and-buttons{
+  .modal-details-and-buttons {
     flex-direction: row;
     flex-wrap: nowrap;
     margin-left: 10px;
@@ -933,4 +930,3 @@ button:hover {
 .no-scroll {
   overflow: hidden;
 }
-
