@@ -9,7 +9,9 @@ const project1 = {
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   tag1: 'html',
   tag2: 'css',
-  tag3: 'javaScript'
+  tag3: 'javaScript',
+  btnId: 'work-btn-1',
+  details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent'
 }
 
 const project2 = {
@@ -23,7 +25,9 @@ const project2 = {
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   tag1: 'html',
   tag2: 'css',
-  tag3: 'javaScript'
+  tag3: 'javaScript',
+  btnId: 'work-btn-2',
+  details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent'
 }
 
 const project3 = {
@@ -37,8 +41,11 @@ const project3 = {
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   tag1: 'html',
   tag2: 'css',
-  tag3: 'javaScript'
+  tag3: 'javaScript',
+  btnId: 'work-btn-3',
+  details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent'
 }
+
 const project4 = {
   id: 'work-4',
   alt: 'Work Four Preview',
@@ -50,7 +57,9 @@ const project4 = {
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   tag1: 'html',
   tag2: 'css',
-  tag3: 'javaScript'
+  tag3: 'javaScript',
+  btnId: 'work-btn-4',
+  details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent'
 }
 
 const projects = [project1, project2, project3, project4];
