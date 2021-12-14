@@ -9,7 +9,8 @@ const project1 = {
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   tag1: 'html',
   tag2: 'css',
-  tag3: 'javaScript'
+  tag3: 'javaScript',
+  btnId: 'work-btn-1'
 }
 
 const project2 = {
@@ -23,7 +24,8 @@ const project2 = {
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   tag1: 'html',
   tag2: 'css',
-  tag3: 'javaScript'
+  tag3: 'javaScript',
+  btnId: 'work-btn-2'
 }
 
 const project3 = {
@@ -37,7 +39,8 @@ const project3 = {
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   tag1: 'html',
   tag2: 'css',
-  tag3: 'javaScript'
+  tag3: 'javaScript',
+  btnId: 'work-btn-3'
 }
 
 const project4 = {
@@ -51,7 +54,8 @@ const project4 = {
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   tag1: 'html',
   tag2: 'css',
-  tag3: 'javaScript'
+  tag3: 'javaScript',
+  btnId: 'work-btn-4'
 }
 
 const projects = [project1, project2, project3, project4];
@@ -132,6 +136,7 @@ for (i = 0; i < projects.length ; i += 1){
   seeProject.type = 'button';
   seeProject.name = 'see-project';
   seeProject.classList.add('work-button', 'focus');
+  seeProject.id = projects[i].btnId;
   seeProject.innerHTML = 'See Project';
 
   cardInfo.appendChild(workTitle);
@@ -148,46 +153,81 @@ for (i = 0; i < projects.length ; i += 1){
 
 // modals script
 
-let overlay = createElement('div');
-overlay.id = 'overlay';
+function modalDisplay () {
+  let project;
+  if (this.id == project1.btnId) {
+    project = project1;
+  } else if (this.id == project2.btnId) {
+    project = project2;
+  } else if (this.id == project3.btnId) {
+    project = project3;
+  } else if (this.id == project4.btnId) {
+    project = project4;
+  }
 
-let modal = createElement('div');
-modal.id = 'modal';
-modal.className = 'd-flex';
-modal.innerHTML = `<div class="modal-container d-flex">
-<div class="work-title d-flex"><h3>Multi-Post Stories</div>
-<div class="modal-close-btn"></div>
-<div class="work-info d-flex">
-    <div class="client d-flex">CANOPY</div>
-    <div class="counter d-flex"></div>
-    <div class="job d-flex"><p>Back End Dev</p></div>
-    <div class="counter d-flex"></div>
-    <div class="year d-flex">2015</div>
-</div>
-<div class="modal-preview d-flex"><img src="img/works/work2.png" alt="Work Two Preview" class="card-preview"></div>
-<div class="work-description d-flex"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p></div>
-<div class="modal-tags d-flex">
-    <ul class="work-tags d-flex">
-        <li><button type="button" class="tag-button focus">html</button></li>
-        <li><button type="button" class="tag-button focus">css</button></li>
-        <li><button type="button" class="tag-button focus">javaScript</button></li>
-    </ul>
-</div>
-<div class="modal-buttons d-flex">
-    <div class="modal-live-btn d-flex">
-        <button type="button" name="see-project" class="work-button focus">
-            <p>See Live</p>
-            <img src="img/icon/iconlive.png" alt="Go Live Icon">
-        </button>
-    </div>
-    <div class="modal-close-btn d-flex">
-        <button type="button" name="see-project" class="work-button focus">
-            <p>See Source</p>
-            <img src="img/icon/iconghblue.png" alt="Go Live Icon">
-        </button>
-    </div>
-</div>
-</div>`;
+  let overlay = document.createElement('div');
+  overlay.id = 'overlay';
+
+  let modal = document.createElement('div');
+  modal.id = 'modal';
+  modal.className = 'd-flex';
+  modal.innerHTML = `<div class="modal-container d-flex">
+  <div class="d-flex">
+      <div class="work-title d-flex"><h3>${project.title}</h3></div>
+      <div class="modal-close-btn" id="modal-close-btn"><img src="img/icon/xiconblack.png" alt="Close Icon"></div>
+  </div>
+  <div class="work-info d-flex">
+      <div class="client d-flex">${project.client}</div>
+      <div class="counter d-flex"></div>
+      <div class="job d-flex"><p>${project.job}</p></div>
+      <div class="counter d-flex"></div>
+      <div class="year d-flex">${project.year}</div>
+  </div>
+  <div class="modal-preview d-flex"><img src="${project.img}" alt="${project.alt}" class="card-preview"></div>
+  <div class="work-description d-flex"><p>${project.description}</p></div>
+  <div class="modal-tags d-flex">
+      <ul class="work-tags d-flex">
+          <li><button type="button" class="tag-button focus">${project.tag1}</button></li>
+          <li><button type="button" class="tag-button focus">${project.tag2}</button></li>
+          <li><button type="button" class="tag-button focus">${project.tag3}</button></li>
+      </ul>
+  </div>
+  <div class="modal-buttons d-flex">
+      <div class="modal-live-btn d-flex">
+          <button type="button" name="see-project" class="work-button focus">
+              <p>See Live</p>
+              <img src="img/icon/iconlive.png" alt="Go Live Icon">
+          </button>
+      </div>
+      <div class="modal-close-btn d-flex">
+          <button type="button" name="see-project" class="work-button focus">
+              <p>See Source</p>
+              <img src="img/icon/iconghblue.png" alt="Go Live Icon">
+          </button>
+      </div>
+  </div>
+  </div>`;
+
+  document.body.appendChild(overlay);
+  document.body.appendChild(modal);
+  document.body.classList.add('no-scroll');
+
+  const modalCloseBtn = document.querySelector('#modal-close-btn');
+  modalCloseBtn.addEventListener('click', modalClose);
+}
+
+function modalClose () {
+  modal.remove();
+  overlay.remove();
+  document.body.classList.remove('no-scroll');
+}
+
+const workBtn = document.querySelectorAll('.work-button');
+
+workBtn.forEach((element) => {
+  element.addEventListener('click', modalDisplay);
+})
+
 
 
 

@@ -689,7 +689,7 @@ button:hover {
 /* Modals Styling */
 
 #overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -700,7 +700,7 @@ button:hover {
 
 #modal {
   display: inline-flex;
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   bottom: 20px;
