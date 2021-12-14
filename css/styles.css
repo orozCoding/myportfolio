@@ -696,9 +696,11 @@ button:hover {
   bottom: 0;
   background-color: #c1c7d0;
   opacity: 0.8;
+  display: none;
 }
 
 #modal {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
