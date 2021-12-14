@@ -699,24 +699,23 @@ button:hover {
 }
 
 #modal {
+  display: inline-flex;
   position: absolute;
   top: 20px;
   right: 20px;
   bottom: 20px;
   left: 20px;
-  z-index: 10;
   align-items: center;
+  justify-content: center;
 }
 
 .modal-container {
   display: flex;
-  flex-shrink: 1;
   flex-direction: column;
   justify-content: space-between;
   align-items: space-between;
-  padding: 20px 15px 20px 15px;
-  gap: 10px;
-  min-width: none;
+  padding: 5px 5px 5px 5px;
+  gap: 5px;
   background-color: #fff;
   border: 1px solid #fff;
   border-radius: 10px;
@@ -731,7 +730,7 @@ button:hover {
 }
 
 .modal-container .work-title {
-  font-size: 32px;
+  font-size: 20px;
 }
 
 .modal-container .work-info,
@@ -742,12 +741,11 @@ button:hover {
 }
 
 .modal-container .work-description {
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 11px;
 }
 
 .modal-container .modal-preview {
-  max-width: 95%;
+  width: 250px;
   align-self: center;
 }
 
@@ -761,21 +759,28 @@ button:hover {
 }
 
 .modal-buttons button {
-  width: fit-content;
-  padding-top: 5px;
-  padding-right: 0px;
-  padding-left: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 .modal-buttons button p {
   margin: 0;
-  padding-right: 5px;
-  padding-left: 5px;
   font-size: 10px;
+}
+
+.modal-buttons .work-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 40px;
+  gap: 5px;
 }
 
 .modal-buttons img {
   max-width: 15px;
   max-height: 15px;
 }
-
