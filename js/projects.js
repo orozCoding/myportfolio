@@ -223,14 +223,14 @@ function modalDisplay() {
   document.body.appendChild(modal);
   document.body.classList.add('no-scroll');
 
+  function modalClose() {
+    modal.remove();
+    overlay.remove();
+    document.body.classList.remove('no-scroll');
+  }
+
   const modalCloseBtn = document.querySelector('#modal-close-btn');
   modalCloseBtn.addEventListener('click', modalClose);
-}
-
-function modalClose () {
-  modal.remove();
-  overlay.remove();
-  document.body.classList.remove('no-scroll');
 }
 
 const workBtn = document.querySelectorAll('.work-button');
