@@ -541,6 +541,10 @@ button:hover {
   font-size: 11px;
 }
 
+#work-description-long {
+  display: none;
+}
+
 .modal-container .modal-preview {
   width: 250px;
   align-self: center;
@@ -881,6 +885,59 @@ button:hover {
   .modal-full-buttons {
     align-items: start;
   }
+}
+
+@media screen and (min-height: 1024px) {
+  .work-title h3 {
+    font-size: 40px;
+  }
+
+  .modal-container {
+    width: 900px;
+    height: 900px;
+    justify-content: start;
+  }
+
+  .modal-container .modal-preview {
+    display: block;
+    width: 900px;
+    max-height: 500px;
+    align-items: start;
+  }
+  .modal-container .modal-preview img {
+    display: block;
+    max-width: none;
+    width: 900px;
+    overflow: hidden;
+  }
+
+  #modal-details-and-buttons {
+    margin-top: 20px;
+  }
+
+  #modal-details-and-buttons .work-description {
+    font-size: 15px;
+    flex-grow: 3;
+  }
+  
+  #work-description-short {
+    display: none;
+  }
+
+  #work-description-long {
+    display: block;
+    max-width: 600px;
+  }
+
+  .modal-full-buttons {
+    gap: 20px;
+    align-self: start;
+  }
+
+  .modal-full-buttons .d-flex {
+    margin-left: 10px;
+  }
+
 }
 
 .focus:focus {

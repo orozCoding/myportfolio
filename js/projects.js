@@ -1,4 +1,4 @@
-const project1 = {
+const projects = [{
   id: 'work-1',
   alt: 'Work One Preview',
   title: 'Tonic',
@@ -12,9 +12,16 @@ const project1 = {
   tag3: 'javaScript',
   btnId: 'work-btn-1',
   details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-};
-
-const project2 = {
+  details2: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,
+  when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+  quisquam facere velit delectus recusandae. Iure laborum, esse nobis similique est hic Incidunt, ducimus dolorem consequuntur
+  vero excepturi nobis quibusdam ea et, laboriosam eos. Ex, molestias quis eos quam ut incidunt corrupti,`,
+  live: 'https://orozcoding.github.io/myportfolio/',
+  source: 'https://github.com/orozCoding/myportfolio',
+},
+{
   id: 'work-2',
   alt: 'Work Two Preview',
   title: 'Multi-Post Stories',
@@ -28,9 +35,16 @@ const project2 = {
   tag3: 'javaScript',
   btnId: 'work-btn-2',
   details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-};
-
-const project3 = {
+  details2: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,
+  when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+  quisquam facere velit delectus recusandae. Iure laborum, esse nobis similique est hic Incidunt, ducimus dolorem consequuntur
+  vero excepturi nobis quibusdam ea et, laboriosam eos. Ex, molestias quis eos quam ut incidunt corrupti,`,
+  live: 'https://orozcoding.github.io/myportfolio/',
+  source: 'https://github.com/orozCoding/myportfolio',
+},
+{
   id: 'work-3',
   alt: 'Work Three Preview',
   title: 'Tonic',
@@ -44,9 +58,16 @@ const project3 = {
   tag3: 'javaScript',
   btnId: 'work-btn-3',
   details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-};
-
-const project4 = {
+  details2: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,
+  when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+  quisquam facere velit delectus recusandae. Iure laborum, esse nobis similique est hic Incidunt, ducimus dolorem consequuntur
+  vero excepturi nobis quibusdam ea et, laboriosam eos. Ex, molestias quis eos quam ut incidunt corrupti,`,
+  live: 'https://orozcoding.github.io/myportfolio/',
+  source: 'https://github.com/orozCoding/myportfolio',
+},
+{
   id: 'work-4',
   alt: 'Work Four Preview',
   title: 'Tonic',
@@ -60,9 +81,15 @@ const project4 = {
   tag3: 'javaScript',
   btnId: 'work-btn-4',
   details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-};
-
-const projects = [project1, project2, project3, project4];
+  details2: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,
+  when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+  quisquam facere velit delectus recusandae. Iure laborum, esse nobis similique est hic Incidunt, ducimus dolorem consequuntur
+  vero excepturi nobis quibusdam ea et, laboriosam eos. Ex, molestias quis eos quam ut incidunt corrupti,`,
+  live: 'https://orozcoding.github.io/myportfolio/',
+  source: 'https://github.com/orozCoding/myportfolio',
+}];
 
 // work section
 
@@ -160,15 +187,15 @@ for (let i = 0; i < projects.length; i += 1) {
 // modals script
 
 function modalDisplay() {
-  let project;
-  if (this.id === project1.btnId) {
-    project = project1;
-  } else if (this.id === project2.btnId) {
-    project = project2;
-  } else if (this.id === project3.btnId) {
-    project = project3;
-  } else if (this.id === project4.btnId) {
-    project = project4;
+  let x;
+  if (this.id === projects[0].btnId) {
+    x = 0;
+  } else if (this.id === projects[1].btnId) {
+    x = 1;
+  } else if (this.id === projects[2].btnId) {
+    x = 2;
+  } else if (this.id === projects[3].btnId) {
+    x = 3;
   }
 
   const overlay = document.createElement('div');
@@ -180,36 +207,37 @@ function modalDisplay() {
   modal.innerHTML = `
   <div class="modal-container d-flex">
     <div class="d-flex">
-        <div class="work-title d-flex"><h3>${project.title}</h3></div>
+        <div class="work-title d-flex"><h3>${projects[x].title}</h3></div>
         <div class="modal-close-btn" id="modal-close-btn"><img src="img/icon/xiconblack.png" alt="Close Icon"></div>
     </div>
     <div class="work-info d-flex">
-        <div class="client d-flex">${project.client}</div>
+        <div class="client d-flex">${projects[x].client}</div>
         <div class="counter d-flex"></div>
-        <div class="job d-flex"><p>${project.job}</p></div>
+        <div class="job d-flex"><p>${projects[x].job}</p></div>
         <div class="counter d-flex"></div>
-        <div class="year d-flex">${project.year}</div>
+        <div class="year d-flex">${projects[x].year}</div>
     </div>
-    <div class="modal-preview d-flex"><img src="${project.img}" alt="${project.alt}" class="card-preview"></div>
-    <div class="modal-details-and-buttons d-flex">
-      <div class="work-description d-flex"><p>${project.details}</p></div>
+    <div class="modal-preview d-flex"><img src="${projects[x].img}" alt="${projects[x].alt}" class="card-preview"></div>
+    <div id="modal-details-and-buttons" class="modal-details-and-buttons d-flex">
+      <div id="work-description-short" class="work-description d-flex"><p>${projects[x].details}</p></div>
+      <div id="work-description-long" class="work-description d-flex"><p>${projects[x].details2}</p></div>
       <div class="modal-full-buttons d-flex">
         <div class="modal-tags d-flex">
             <ul class="work-tags d-flex">
-                <li><button type="button" class="tag-button focus">${project.tag1}</button></li>
-                <li><button type="button" class="tag-button focus">${project.tag2}</button></li>
-                <li><button type="button" class="tag-button focus">${project.tag3}</button></li>
+                <li><button type="button" class="tag-button focus">${projects[x].tag1}</button></li>
+                <li><button type="button" class="tag-button focus">${projects[x].tag2}</button></li>
+                <li><button type="button" class="tag-button focus">${projects[x].tag3}</button></li>
             </ul>
         </div>
         <div class="modal-buttons d-flex">
             <div class="modal-live-btn d-flex">
-                <button type="button" name="see-project" class="work-button focus">
+                <button type="button" name="see-project" class="work-button focus" onclick=" window.open('${projects[x].live}', '_blank')">
                     <p>See Live</p>
                     <img src="img/icon/iconlive.png" alt="Go Live Icon">
                 </button>
             </div>
             <div class="modal-close-btn d-flex">
-                <button type="button" name="see-project" class="work-button focus">
+                <button type="button" name="see-project" class="work-button focus" onclick=" window.open('${projects[x].source}', '_blank')">
                     <p>See Source</p>
                     <img src="img/icon/iconghblue.png" alt="Go Live Icon">
                 </button>
