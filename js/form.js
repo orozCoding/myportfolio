@@ -1,6 +1,4 @@
-const formName = document.getElementById('form-name');
 const email = document.getElementById('form-email');
-const msg = document.getElementById('form-msg');
 const errorMsg = document.getElementsByClassName('form-error');
 const form = document.getElementById('form');
 
@@ -12,9 +10,5 @@ form.addEventListener('submit', (event) => {
   } else {
     errorMsg[1].innerHTML = '';
     email.style.border = null;
-    form.submit();
-    formName.value = '';
-    email.value = '';
-    msg.value = '';
   }
 });
