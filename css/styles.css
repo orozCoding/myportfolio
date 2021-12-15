@@ -987,3 +987,9 @@ button:hover {
 .no-scroll {
   overflow: hidden;
 }
+
+/* Form style */
+
+.form-error {
+  color: white;
+}

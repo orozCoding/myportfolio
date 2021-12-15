@@ -11,9 +11,11 @@ form.addEventListener('submit', (event) => {
 
   if (email.value != email.value.toLowerCase()) {
     event.preventDefault();
-    errorMsg[1].innerHTML = 'nop';
+    errorMsg[1].innerHTML = 'Please use lower case.';
+    email.style.border = 'solid 5px red';
   } else {
     errorMsg[1].innerHTML = '';
+    email.style.border = null;
   }
   
 } );
