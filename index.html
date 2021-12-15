@@ -155,14 +155,17 @@
                         you need built or
                         a project that needs coding. I’d love to help with it.</p>
                 </div>
-                <div class="form-input d-flex">
+                <div id="form" class="form-input d-flex">
                     <form action="https://formspree.io/f/myyognov" method="post" class="d-flex">
-                        <input type="text" name="name" class="name-input focus" maxlength="30" placeholder="Your Name"
+                        <input id="form-name" type="text" name="name" class="name-input focus" maxlength="30" placeholder="Your Name"
                             required />
-                        <input type="email" name="email" class="email-input focus" placeholder="youremail@mail.com"
+                        <div class="form-error"></div>
+                        <input id="form-email" type="email" name="email" class="email-input focus" placeholder="youremail@mail.com"
                             required />
-                        <textarea name="message" placeholder="Write your message here" maxlength="500"
+                        <div class="form-error"></div>
+                        <textarea id="form-message" name="message" placeholder="Write your message here" maxlength="500"
                             required></textarea>
+                        <div class="form-error"></div>
                         <button type="submit" class="button focus"> Get In Touch </button>
                     </form>
                 </div>
@@ -185,6 +188,7 @@
     </div>
     <script src="js/script.js"></script>
     <script src="js/projects.js"></script>
+    <script src="js/form.js"></script>
 </body>
 
 </html>
