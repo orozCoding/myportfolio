@@ -4,9 +4,6 @@ const msg = document.getElementById('form-msg');
 const errorMsg = document.getElementsByClassName('form-error');
 const form = document.getElementById('form');
 
-const hasCaps = 
-
-
 form.addEventListener('submit', (event) => {
 
   if (email.value != email.value.toLowerCase()) {
