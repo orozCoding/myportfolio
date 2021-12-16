@@ -18,29 +18,27 @@ form.addEventListener('submit', (event) => {
 let formStorage = {
   formName: '',
   formEmail: '',
-  formMsg: ''
-}
-
-getLocalStorage();
+  formMsg: '',
+};
 
 localStorage.setItem('formInfo', JSON.stringify(formStorage));
 
 nameInput.addEventListener('change', () => {
   formStorage.formName = nameInput.value;
   localStorage.setItem('formInfo', JSON.stringify(formStorage));
-})
+});
 
 emailInput.addEventListener('change', () => {
   formStorage.formEmail = emailInput.value;
   localStorage.setItem('formInfo', JSON.stringify(formStorage));
-})
+});
 
 msgInput.addEventListener('change', () => {
   formStorage.formMsg = msgInput.value;
   localStorage.setItem('formInfo', JSON.stringify(formStorage));
 });
 
-function getLocalStorage () {
+function getLocalStorage() {
   if (localStorage.getItem('formInfo')) {
     formStorage = JSON.parse(localStorage.getItem('formInfo'));
     nameInput.value = formStorage.formName;
@@ -48,3 +46,5 @@ function getLocalStorage () {
     msgInput.value = formStorage.formMsg;
   }
 }
+
+getLocalStorage();
