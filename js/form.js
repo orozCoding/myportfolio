@@ -15,13 +15,21 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-let formStorage = {
-  formName: '',
-  formEmail: '',
-  formMsg: '',
-};
+let formStorage = {};
 
-localStorage.setItem('formInfo', JSON.stringify(formStorage));
+if (!localStorage.getItem('formInfo')){
+  formStorage = {
+    formName: '',
+    formEmail: '',
+    formMsg: '',
+  };
+  localStorage.setItem('formInfo', JSON.stringify(formStorage));
+} else if (localStorage.getItem('formInfo')) {
+    formStorage = JSON.parse(localStorage.getItem('formInfo'));
+    nameInput.value = formStorage.formName;
+    emailInput.value = formStorage.formEmail;
+    msgInput.value = formStorage.formMsg;
+};
 
 nameInput.addEventListener('change', () => {
   formStorage.formName = nameInput.value;
@@ -37,14 +45,3 @@ msgInput.addEventListener('change', () => {
   formStorage.formMsg = msgInput.value;
   localStorage.setItem('formInfo', JSON.stringify(formStorage));
 });
-
-function getLocalStorage() {
-  if (localStorage.getItem('formInfo')) {
-    formStorage = JSON.parse(localStorage.getItem('formInfo'));
-    nameInput.value = formStorage.formName;
-    emailInput.value = formStorage.formEmail;
-    msgInput.value = formStorage.formMsg;
-  }
-}
-
-getLocalStorage();
