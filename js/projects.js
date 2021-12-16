@@ -233,13 +233,13 @@ function modalDisplay() {
             <div class="modal-live-btn d-flex">
                 <button type="button" name="see-project" class="work-button focus" onclick=" window.open('${projects[x].live}', '_blank')">
                     <p>See Live</p>
-                    <img src="/img/icon/iconlive.png" alt="Go Live Icon">
+                    <img src="/img/icon/liveicon.png" alt="Go Live Icon">
                 </button>
             </div>
             <div class="modal-close-btn d-flex">
                 <button type="button" name="see-project" class="work-button focus" onclick=" window.open('${projects[x].source}', '_blank')">
                     <p>See Source</p>
-                    <img src="/img/icon/iconghblue.png" alt="Go Live Icon">
+                    <img src="/img/icon/gbiconblue.png" alt="Go Live Icon">
                 </button>
             </div>
         </div>
