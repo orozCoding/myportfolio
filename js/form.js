@@ -5,13 +5,13 @@ const errorMsg = document.getElementsByClassName('form-error');
 const form = document.getElementById('form');
 
 form.addEventListener('submit', (event) => {
-  if (email.value !== email.value.toLowerCase()) {
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
     event.preventDefault();
     errorMsg[1].innerHTML = 'Please use lower case.';
-    email.style.border = 'solid 5px red';
+    emailInput.style.border = 'solid 5px red';
   } else {
     errorMsg[1].innerHTML = '';
-    email.style.border = null;
+    emailInput.style.border = null;
   }
 });
 
@@ -23,30 +23,28 @@ let formStorage = {
 
 getLocalStorage();
 
-localStorage.setItem('formInfo', JSON.stringify( formStorage ));
+localStorage.setItem('formInfo', JSON.stringify(formStorage));
 
-nameInput.addEventListener('change', (event) => {
+nameInput.addEventListener('change', () => {
   formStorage.formName = nameInput.value;
-  localStorage.setItem('formInfo', JSON.stringify( formStorage ));
+  localStorage.setItem('formInfo', JSON.stringify(formStorage));
 })
 
-emailInput.addEventListener('change', (event) => {
+emailInput.addEventListener('change', () => {
   formStorage.formEmail = emailInput.value;
-  localStorage.setItem('formInfo', JSON.stringify( formStorage ));
+  localStorage.setItem('formInfo', JSON.stringify(formStorage));
 })
 
-msgInput.addEventListener('change', (event) => {
+msgInput.addEventListener('change', () => {
   formStorage.formMsg = msgInput.value;
-  localStorage.setItem('formInfo', JSON.stringify( formStorage ));
-})
+  localStorage.setItem('formInfo', JSON.stringify(formStorage));
+});
 
 function getLocalStorage () {
-
   if (localStorage.getItem('formInfo')) {
     formStorage = JSON.parse(localStorage.getItem('formInfo'));
     nameInput.value = formStorage.formName;
     emailInput.value = formStorage.formEmail;
     msgInput.value = formStorage.formMsg;
   }
-
 }
