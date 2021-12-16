@@ -17,7 +17,7 @@ form.addEventListener('submit', (event) => {
 
 let formStorage = {};
 
-if (!localStorage.getItem('formInfo')){
+if (!localStorage.getItem('formInfo')) {
   formStorage = {
     formName: '',
     formEmail: '',
@@ -25,11 +25,11 @@ if (!localStorage.getItem('formInfo')){
   };
   localStorage.setItem('formInfo', JSON.stringify(formStorage));
 } else if (localStorage.getItem('formInfo')) {
-    formStorage = JSON.parse(localStorage.getItem('formInfo'));
-    nameInput.value = formStorage.formName;
-    emailInput.value = formStorage.formEmail;
-    msgInput.value = formStorage.formMsg;
-};
+  formStorage = JSON.parse(localStorage.getItem('formInfo'));
+  nameInput.value = formStorage.formName;
+  emailInput.value = formStorage.formEmail;
+  msgInput.value = formStorage.formMsg;
+}
 
 nameInput.addEventListener('change', () => {
   formStorage.formName = nameInput.value;
