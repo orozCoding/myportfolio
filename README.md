@@ -18,6 +18,7 @@ Visit My Portfolio with the following link:
 
 - HTML
 - CSS
+- javaScript
 
 ## Authors
 
