@@ -14,3 +14,5 @@ form.addEventListener('submit', (event) => {
     emailInput.style.border = null;
   }
 });
+
+let formInfo = { name: '',email: '',msg: '',};
