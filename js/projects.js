@@ -5,7 +5,7 @@ const projects = [{
   client: 'CANOPY',
   job: 'Back End Dev',
   year: '2015',
-  img: '/img/works/work1.png',
+  img: 'img/works/work1.png',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   tag1: 'html',
   tag2: 'css',
@@ -28,7 +28,7 @@ const projects = [{
   client: 'CANOPY',
   job: 'Back End Dev',
   year: '2015',
-  img: '/img/works/work2.png',
+  img: 'img/works/work2.png',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   tag1: 'html',
   tag2: 'css',
@@ -51,7 +51,7 @@ const projects = [{
   client: 'CANOPY',
   job: 'Back End Dev',
   year: '2015',
-  img: '/img/works/work3.png',
+  img: 'img/works/work3.png',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   tag1: 'html',
   tag2: 'css',
@@ -74,7 +74,7 @@ const projects = [{
   client: 'CANOPY',
   job: 'Back End Dev',
   year: '2015',
-  img: '/img/works/work4.png',
+  img: 'img/works/work4.png',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   tag1: 'html',
   tag2: 'css',
@@ -233,13 +233,13 @@ function modalDisplay() {
             <div class="modal-live-btn d-flex">
                 <button type="button" name="see-project" class="work-button focus" onclick=" window.open('${projects[x].live}', '_blank')">
                     <p>See Live</p>
-                    <img src="/img/icon/liveicon.png" alt="Go Live Icon">
+                    <img src="img/icon/liveicon.png" alt="Go Live Icon">
                 </button>
             </div>
             <div class="modal-close-btn d-flex">
                 <button type="button" name="see-project" class="work-button focus" onclick=" window.open('${projects[x].source}', '_blank')">
                     <p>See Source</p>
-                    <img src="/img/icon/gbiconblue.png" alt="Go Live Icon">
+                    <img src="img/icon/gbiconblue.png" alt="Go Live Icon">
                 </button>
             </div>
         </div>
