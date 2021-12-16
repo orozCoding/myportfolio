@@ -1,4 +1,6 @@
-const email = document.getElementById('form-email');
+const nameInput = document.getElementById('form-name');
+const emailInput = document.getElementById('form-email');
+const msgInput = document.getElementById('form-msg');
 const errorMsg = document.getElementsByClassName('form-error');
 const form = document.getElementById('form');
 
