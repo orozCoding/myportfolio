@@ -14,3 +14,34 @@ form.addEventListener('submit', (event) => {
     emailInput.style.border = null;
   }
 });
+
+let formStorage = {};
+
+if (!localStorage.getItem('formInfo')) {
+  formStorage = {
+    formName: '',
+    formEmail: '',
+    formMsg: '',
+  };
+  localStorage.setItem('formInfo', JSON.stringify(formStorage));
+} else if (localStorage.getItem('formInfo')) {
+  formStorage = JSON.parse(localStorage.getItem('formInfo'));
+  nameInput.value = formStorage.formName;
+  emailInput.value = formStorage.formEmail;
+  msgInput.value = formStorage.formMsg;
+}
+
+nameInput.addEventListener('change', () => {
+  formStorage.formName = nameInput.value;
+  localStorage.setItem('formInfo', JSON.stringify(formStorage));
+});
+
+emailInput.addEventListener('change', () => {
+  formStorage.formEmail = emailInput.value;
+  localStorage.setItem('formInfo', JSON.stringify(formStorage));
+});
+
+msgInput.addEventListener('change', () => {
+  formStorage.formMsg = msgInput.value;
+  localStorage.setItem('formInfo', JSON.stringify(formStorage));
+});
