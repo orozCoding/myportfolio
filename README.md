@@ -2,7 +2,7 @@
 
 # Orozcoding's Portfolio
 
-> Personal Portfolio Webpage showing my (future) projects.
+> Personal Portfolio Webpage showing my stack and my projects.
 
 ## Preview
 
